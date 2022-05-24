@@ -1,0 +1,33 @@
+from django.http import HttpResponse
+
+# creacion de nuestra primera vista
+
+def saludo(request):
+
+    return HttpResponse("HOLA DEVELOPER")
+
+def despedida(request):
+
+    documento="""<html>
+    <body>
+    <h1>HASTA LUEGO DEVELOPER</h1>
+    </body>
+    </html>"""
+
+    return HttpResponse(documento)
+
+
+    # EJERCICIOS ACD. CONTENIDO DINAMICO
+
+def dameFecha(request):
+    fechaActual=datetime.datetime.now()
+
+    documento="""<html>
+    <body>
+    <h1>Fecha y hora actuales %s </h1>
+    </body>
+    </html>""" % fechaActual
+
+    return 
+
+
